@@ -1,0 +1,252 @@
+.scrollComponent {
+
+    justify-content: center;
+}
+
+.craetePostContainer {
+    display: flex;
+    height: 10svh;
+    width: 100%;
+    padding-inline: 0.8rem;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.044);
+    border-radius: 15px;
+}
+
+.warpper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    max-width: 80%;
+}
+
+.userProfile {
+    border: 1px solid silver;
+    border-radius: 100%;
+    height: 60%;
+    max-width: 50px;
+    width: fit-content;
+}
+
+
+
+.fab {
+    background: rgb(6, 29, 158);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.fab svg {
+    width: fit-content;
+    height: 30px;
+}
+
+.uploadBtn {
+    position: absolute;
+    right: 35px;
+    top: 58px;
+    bottom: -12px;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 0.2rem;
+    padding-block: 0.2rem;
+    cursor: pointer;
+    width: 30px;
+}
+
+.uploadBtn {
+    color: blue;
+
+}
+
+.textArea {
+    width: 80%;
+    height: 70%;
+    border: 1px solid silver;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    resize: none;
+    overflow: hidden;
+}
+
+
+
+.singleCard {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.singleCardProfileContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    padding-right: 3rem;
+}
+
+.singleCardProfileContainer img {
+    width: 10%;
+
+    border-radius: 50%;
+}
+
+.singleCardImg {
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.singleCardImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.singleCardImg1 img {
+
+    margin-top: 20px;
+    min-width: 150px;
+    width: 100%;
+    min-height: 220px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.optionsContainer {
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+
+.singleOptionsContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: center;
+
+}
+
+.singleOptionsContainer svg {
+    height: 100%;
+    width: 10%;
+    min-width: 1rem;
+    cursor: pointer;
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.134);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.allCommentsContainer {
+    width: 60vh;
+    height: 60vh;
+    background: rgba(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    padding: 4rem;
+}
+
+.postCommentContainer {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.postCommentContainer input {
+    flex: 0.9;
+    padding-inline: 1.5rem;
+    padding-block: 1.1rem;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+.commentBtn {
+    flex: 0.1;
+    width: fit-content;
+    padding: 1.1rem;
+    background: rgba(25, 0, 255, 0.885);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.commentBtn:hover {
+    transition: 0.3s;
+    padding: 0.9rem;
+    cursor: pointer;
+}
+
+/* For screens with width less than 600px */
+@media screen and (max-width: 600px) {
+    .allCommentsContainer {
+        width: 85vw !important;
+        margin-left: 2%;
+
+        /* Set the width to 90% of the viewport */
+        height: 50vh;
+        /* Set height to 50% of the viewport height */
+        padding: 2rem;
+        border: 1px solid silver;
+        /* Add some padding to ensure space around content */
+    }
+
+    .postCommentContainer {
+        /* width: 100%; */
+        /* Allow the post comment container to use the full width */
+        flex-direction: column;
+        /* Stack the input and button vertically */
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        /* Add some space between input and button */
+    }
+
+    .postCommentContainer input {
+        width: 80%;
+        /* Make the input take the full width of the container */
+        padding-inline: 1rem;
+        /* Add padding to the input */
+        padding-block: 0.8rem;
+        /* Ensure there is enough space vertically */
+        font-size: 1rem;
+
+        /* Adjust font size for mobile */
+    }
+
+    .commentBtn {
+        width: fit-content;
+        /* Make the button take full width */
+        padding: 1rem;
+        /* Adjust padding for the button */
+        text-align: center;
+        /* Ensure the text inside the button is centered */
+    }
+}

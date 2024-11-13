@@ -1,0 +1,33 @@
+.userCard {
+    display: flex;
+    width: 100%;
+    gap: 1.3rem;
+    padding: 1.3rem;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.profilePicture img {
+    width: 6.5rem;
+    border-radius: 50%;
+
+}
+
+.connectedBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background-color: white;
+    border: 1px solid white;
+    outline: none;
+    color: rgb(12, 12, 243);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .userinfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

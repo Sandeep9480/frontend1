@@ -1,0 +1,135 @@
+.homeContainer {
+    display: flex;
+}
+
+.homeContainer>div:nth-child(odd) {
+    flex: 0.2;
+}
+
+.homeContainer>div:nth-child(even) {
+    flex: 0.6;
+}
+
+.homeContainerLeft {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.2rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.164);
+    gap: 1.2rem;
+    align-items: start;
+}
+
+.slidBarOption {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 0.7rem;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.feedContainer {
+    padding-inline: 0.8rem;
+}
+
+.slidBarOption :hover {
+    transform: scale(1.04);
+}
+
+.slidBarOption svg {
+    max-height: 1.2em;
+    min-width: fit-content;
+}
+
+.feedContaine {
+    color: black;
+}
+
+.extraContainer {
+    border-left: 1px solid rgba(255, 255, 255, 0.164);
+    padding-left: 2rem;
+}
+
+.allUserProfile {
+    max-width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profile {
+    min-width: 50%;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.mobileNavbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.1);
+    /* Semi-transparent overlay */
+    backdrop-filter: blur(10px);
+    /* Apply the blur effect */
+    z-index: 999;
+    /* Ensure the element is on top of other content */
+    align-items: center;
+    border: none;
+    /* margin-left: 8%; */
+
+}
+
+.mobileNavbar svg {
+    height: 1.9rem;
+    width: 1.9rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .extraContainer {
+        display: none;
+    }
+
+    .homeContainer {
+        display: block;
+    }
+
+    .slidBarOption {
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: flex;
+    }
+}
+
+.feedContainer {
+    padding-block: 8vh;
+}
+
+@media only screen and (min-width:600px) {
+    .mobileNavbar {
+        display: none;
+    }
+}
