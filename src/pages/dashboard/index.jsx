@@ -308,6 +308,7 @@ const Dashboard = () => {
                     value={commentText}
                     onChange={(e) => setCommentText(e.target.value)}
                     placeholder="Comment"
+                    style={{ color: "black" }}
                   />
                   <div
                     onClick={() => {

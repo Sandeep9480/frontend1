@@ -12,7 +12,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 80vw;
-    background: white;
+    background: rgba(255, 255, 255, 0.101);
     box-shadow: 10px 10px 15px gray;
 }
 
@@ -33,9 +33,10 @@
     padding-block: 0.8rem;
     outline: none;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.505);
+    border: 1px solid rgba(239, 225, 225, 0.505);
     width: 100%;
     opacity: 0.4;
+    color: black;
 }
 
 .inputField:hover {
